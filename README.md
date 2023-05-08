@@ -18,11 +18,13 @@ classe **dic**, nela temos duas funções: **iniciaDicionario** (recupera o dici
 dicionário ao fim da execução ou quando solicitado pelo administrador). Essa persistência é feita pelo **json** aqui adicionado.
 
 A **arquitetura de software** escolhida foi **em camadas**, uma vez que a **aplicação** só precisa se comunicar com o 
-**processamento** e a camada de **dados** apenas provê o dicionário de entrada e guarda o da saída, sendo assim, só se comunica 
-com **processamento**.
+**processamento** e a camada de **dados** apenas provê o dicionário de entrada e guarda o da saída, sendo assim, só se comunica com **processamento**.
+
+![software](software.png)
 
 A **arquitera de sistema** utilizada foi **centralizada**. O uso do **cliente/servidor** permite a separação dos módulos 
 anteriores em 2 tipos. O **cliente** ficará com a camada de **aplicação** interagindo com o usuário, fornecendo entradas 
 ao servidor e mostrando ao usuário as saídas desejadas. O **servidor** será responsável pelo **processamento** e **dados**, 
 portanto recebe as entradas do módulo aplicação, e, de acordo com a entrada, fornece o resultado da leitura ou escrita, 
 além disso, recupera o dicionário da execução anterior e salva o último.
+![sistema](sistema.png)
